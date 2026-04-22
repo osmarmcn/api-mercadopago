@@ -1,0 +1,32 @@
+{
+  "name": "mercado-pago-clean-arch",
+  "version": "1.0.0",
+  "description": "Gateway de Pagamento com Clean Architecture",
+  "main": "dist/main/server.js",
+  "scripts": {
+    "start": "node dist/main/server.js",
+    "dev": "nodemon --watch src/**/*.ts --exec ts-node src/main/server.ts",
+    "build": "tsc",
+    "test": "jest --passWithNoTests",
+    "test:watch": "jest --watch",
+    "test:unit": "jest -c jest-unit-config.cjs",
+    "test:integration": "jest -c jest-integration-config.cjs"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.18.2",
+    "mercadopago": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.19.37",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.0",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
